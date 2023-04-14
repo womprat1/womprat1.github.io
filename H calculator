@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrogen Engine Calculator</title>
+</head>
+<body>
+  <h1>Hydrogen Engine Calculator</h1>
+  <form action="/calculate" method="post">
+    <div>
+      <label for="displacement">Displacement</label>
+      <input type="number" name="displacement" id="displacement">
+    </div>
+    <div>
+      <label for="cylinders">Cylinders</label>
+      <input type="number" name="cylinders" id="cylinders">
+    </div>
+    <div>
+      <label for="compression_ratio">Compression Ratio</label>
+      <input type="number" name="compression_ratio" id="compression_ratio">
+    </div>
+    <div>
+      <label for="hydrogen_air_ratio">Hydrogen-Air Ratio</label>
+      <input type="number" name="hydrogen_air_ratio" id="hydrogen_air_ratio">
+    </div>
+    <div>
+      <label for="rpm">RPM</label>
+      <input type="number" name="rpm" id="rpm">
+    </div>
+    <div>
+      <label for="brake_mean_effective_pressure">Brake Mean Effective Pressure</label>
+      <input type="number" name="brake_mean_effective_pressure" id="brake_mean_effective_pressure">
+    </div>
+    <div>
+      <label for="volumetric_efficiency">Volumetric Efficiency</label>
+      <input type="number" name="volumetric_efficiency" id="volumetric_efficiency">
+    </div>
+    <div>
+      <label for="fuel_mass_flow_rate">Fuel Mass Flow Rate</label>
+      <input type="number" name="fuel_mass_flow_rate" id="fuel_mass_flow_rate">
+    </div>
+    <input type="submit" value="Calculate">
+  </form>
+  <div id="output"></div>
+</body>
+</html>
